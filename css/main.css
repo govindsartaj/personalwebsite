@@ -13,8 +13,13 @@
 
 html {
   color: #222;
-  font-size: 1em;
+  font-size: 2em;
   line-height: 1.4;
+  background-color: whitesmoke;
+}
+
+body, main {
+  background-color: whitesmoke;
 }
 
 .fullname {
@@ -22,6 +27,9 @@ html {
   margin-top: 1%;
 }
 
+p {
+  margin-bottom: 1%;
+}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -62,16 +70,17 @@ hr {
 
 body {
   height: 80vh;
+  font-size: 0.7em;
 }
 
 img {
   display: flex;
   margin: 0 auto;
   border-radius: 50% !important;
-  box-shadow: 0 0 0 1.5em #ffffff;
   height: 25vh;
   width: auto;
 }
+
 
 .fullname, .description, .list-inline {
   text-align: center;
@@ -83,12 +92,12 @@ img {
 
 .quicknav {
   text-align: center !important;
-  margin-top: 3vh;
+  margin-top: 1vh;
   word-spacing: 7vh;
 }
 
 .scrolldown{
-  margin-top: 19vh;
+  margin-top: 14vh;
   text-align: center !important;
 }
 
@@ -124,23 +133,44 @@ nav {
   height: 9vh;
 }
 
+.resume-content{
+  min-width: 100%;
+}
+
+
+
+
+.resume-date{
+  min-width:18rem;
+  color: black;
+  margin-top: 0.5em;
+}
+
+
+/*.resume*/
+
 .about {
-  margin: 10vh 20vw;
+  margin: 10vh 10vw;
 }
 
 
 @media (max-width: 480px) {
   .about{
-    margin-left: 10vw !important;
-    margin-right: 10vw !important;
+    margin-left: 7vw !important;
+    margin-right: 7vw !important;
   }
 }
 
 @media (max-width: 320px) {
   .about{
-    margin-left: 10vw !important;
-    margin-right: 10vw !important;
+    margin-left: 7vw !important;
+    margin-right: 7vw !important;
   }
+}
+
+
+.resume-link:hover{
+  color: lightcoral !important;
 }
 
 

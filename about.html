@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="font-size: 180%">
 <head>
-  <meta charset="utf-8">
-  <title>about me!</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>about me!</title>
+
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/838422de2a.js" crossorigin="anonymous"></script>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+  <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
 
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
@@ -19,7 +20,7 @@
 
   <meta name="theme-color" content="#fafafa">
 </head>
-<body>
+<body style="font-family: 'Abel', monospace">
 
 <ul class="quicknav list-inline">
   <li class="list-inline-item"><a href="index.html">Home</a></li>
@@ -28,12 +29,10 @@
   <li class="list-inline-item"><a href="contact.html">Contact</a></li>
 </ul>
 
-<div class="about">
+<div class="about text-justify">
   <h5>About me</h5>
   <p>Hi there! My name is Govind, and I am a third-year/junior CS major at Grinnell College in Iowa. I am a Web Developer/Programmer at the Data Analysis and Social Inquiry Lab, Grinnell College (DASIL). Currently, I am working on an <u><a href="/personalwebsite/projects/careerchord/index.html">interactive chord diagram</a></u> in
-    D3.js that visualizes career paths of 8,711 Grinnell College alumni. I fixed interaction inconsistencies,
-    redesigned the clicking/hovering logic to make the user experience more intuitive, and removed data
-    label redundancies. I am currently working on making the visualization mobile-friendly.</p>
+    D3.js that visualizes career paths of 8,711 Grinnell College alumni.</p>
 
   <p>In my own time, I build fun projects, like an <u><a href="https://iq1svj3v0m.execute-api.us-east-1.amazonaws.com/default/test3">AWS
     Lambda function</a></u> in Python that when called, runs a scraping function that returns the names and show times of movies that are playing
@@ -41,6 +40,41 @@
     <i>“What movies are playing at The Strand right now?”</i> Check out a complete list of projects on my <u><a href="projects.html">projects page</a></u>.</p>
   <br>
   <h5>Experience</h5>
+  <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
+    <div class="resume-content">
+      <div class="resume-date">
+        <span class="text-secondary">Aug 2019 - Present<br></span>
+        <span class="text-secondary">Grinnell, Iowa</span>
+      </div>
+      <h6 class="mb-0">Software Developer</h6>
+      <div class="subheading mb-2">Data Analysis and Social Inquiry Lab, Grinnell College</div>
+        <p>
+          Working on enhanced UI, visual appeal and readability of D3.js data visualization project. I fixed interaction
+          inconsistencies, redesigned the clicking/hovering logic to make the user experience more intuitive,
+          and removed data label redundancies. I am currently working on making the visualization mobile-friendly.
+      </p>
+    </div>
+  </div>
+
+  <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
+    <div class="resume-content">
+      <div class="resume-date">
+        <span class="text-secondary">May 2019 - Aug 2019<br></span>
+        <span class="text-secondary">Fremont, California</span>
+      </div>
+      <h6 class="mb-0">Software Engineer Intern</h6>
+      <div class="subheading mb-2">Mistral Solutions, Inc.</div>
+      <p>
+        Developed a native Android image viewer application for the Golden-i Infinity Wireless AR headset.
+        I implemented a custom UI and a smooth zoom functionality designed to be controlled using the Golden-i
+        Infinity's motion gestures and voice commands. Halved RecyclerView image load times by identifying and
+        fixing a design bug in thumbnail gallery view.
+      </p>
+    </div>
+  </div>
+
+
+
 </div>
 
 
