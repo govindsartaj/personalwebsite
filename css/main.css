@@ -12,14 +12,15 @@
    ========================================================================== */
 
 html {
-  color: #222;
+  color: #444444;
   font-size: 2em;
   line-height: 1.4;
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 body, main {
-  background-color: whitesmoke;
+  color: #444444;
+  background-color: white;
 }
 
 .fullname {
@@ -76,11 +77,26 @@ body {
 img {
   display: flex;
   margin: 0 auto;
+  border: 0.2em solid whitesmoke;
   border-radius: 50% !important;
   height: 25vh;
   width: auto;
 }
 
+
+.footer {
+  font-size: 0.5em;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #444444;
+  text-align: center;
+}
+
+.font-weight-light{
+  color: #7d7d7d;
+}
 
 .fullname, .description, .list-inline {
   text-align: center;
@@ -183,7 +199,7 @@ nav {
 
 
 .main {
-  margin-top: 18vh;
+  margin-top: 12vh;
   height: 80vh;
   min-height: 80vh;
   text-align: center !important;
