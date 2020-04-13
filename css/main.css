@@ -80,13 +80,20 @@ body {
   position:relative;
   margin:0 auto;
   display: table-cell;
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
 }
 
 .about{
   min-width: 0;
 }
+.about {
+  width: 80vw;
+  height: auto;
+  margin: 10vh 10vw 0 10vw;
+  overflow: hidden;
+}
+
 
 img {
   display: flex;
@@ -210,20 +217,15 @@ nav {
 
 /*.resume*/
 
-.about {
-  width: 100vw;
-  height: auto;
-  padding: 10vh 10vw;
-  overflow: hidden;
-}
 
 
-@media (max-width: 480px) {
-  .about{
-    margin-left: 7vw !important;
-    margin-right: 7vw !important;
-  }
-}
+
+/*@media (max-width: 480px) {*/
+/*  .about{*/
+/*    margin-left: 7vw !important;*/
+/*    margin-right: 7vw !important;*/
+/*  }*/
+/*}*/
 
 @media (max-width: 320px) {
   .about{
@@ -239,8 +241,8 @@ nav {
 
 #dark-button {
   font-size: 20px !important;
-  margin-top: 1px !important;
-  margin-right: 2px !important;
+  margin-top: 2vh !important;
+  margin-right: 1vw !important;
   position:absolute !important;
   top:0 !important;
   right:1% !important;
