@@ -25,12 +25,9 @@ body, main {
 
 .fullname {
   font-size: 200%;
-  margin-top: 1%;
+  padding-top: 1%;
 }
 
-p {
-  margin-bottom: 1%;
-}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -69,9 +66,26 @@ hr {
   padding: 0;
 }
 
+html, body {
+  margin: 0;
+  height: 100vh !important;
+  width: 100vw !important;
+}
+
+
 body {
-  height: 80vh;
+  min-height: 100vh;
   font-size: 0.7em;
+  box-sizing:border-box;
+  position:relative;
+  margin:0 auto;
+  display: table-cell;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.about{
+  min-width: 0;
 }
 
 img {
@@ -84,6 +98,33 @@ img {
 }
 
 
+body.dark-mode {
+  background-color: #252525;
+  color: #ffffff;
+}
+body.dark-mode a {
+  color: #252525;
+}
+body.dark-mode button {
+  background-color: #ffffff;
+  color: #252525;
+}
+
+body.light-mode {
+  background-color: #ffffff;
+  color: #252525;
+}
+body.light-mode a {
+  color: #252525;
+}
+body.light-mode button {
+  background-color: #252525;
+  color: #ffffff;
+}
+
+
+
+
 .footer {
   font-size: 0.5em;
   position: fixed;
@@ -91,7 +132,7 @@ img {
   bottom: 0;
   width: 100%;
   color: #444444;
-  text-align: center;
+  text-align: center !important;
 }
 
 .font-weight-light{
@@ -99,17 +140,21 @@ img {
 }
 
 .fullname, .description, .list-inline {
-  text-align: center;
+  text-align: center !important;
 }
 
-.list-inline {
-  word-spacing: 2vw;
+
+.list-inline-item{
+  margin: 0 !important;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
 }
 
 .quicknav {
   text-align: center !important;
-  margin-top: 1vh;
-  word-spacing: 7vh;
+  padding-top: 2vh;
+  display: flex;
+  justify-content: center;
 }
 
 .scrolldown{
@@ -166,7 +211,10 @@ nav {
 /*.resume*/
 
 .about {
-  margin: 10vh 10vw;
+  width: 100vw;
+  height: auto;
+  padding: 10vh 10vw;
+  overflow: hidden;
 }
 
 
@@ -189,6 +237,15 @@ nav {
   color: lightcoral !important;
 }
 
+#dark-button {
+  font-size: 20px !important;
+  margin-top: 1px !important;
+  margin-right: 2px !important;
+  position:absolute !important;
+  top:0 !important;
+  right:1% !important;
+  border-radius: 12px;
+}
 
 @media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
 @media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
@@ -199,9 +256,10 @@ nav {
 
 
 .main {
-  margin-top: 12vh;
-  height: 80vh;
-  min-height: 80vh;
+  padding-top: 12vh;
+  height: 100vh;
+  min-height: 100vh;
+  display:block;
   text-align: center !important;
 }
 

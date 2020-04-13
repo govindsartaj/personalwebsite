@@ -2,7 +2,7 @@
 <html lang="en" style="font-size: 180%">
 <head>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="utf-8">
   <title>about me!</title>
 
@@ -22,6 +22,8 @@
 </head>
 <body style="font-family: 'Abel', monospace">
 
+<button id="dark-button" type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
+
 <ul class="quicknav list-inline">
   <li class="list-inline-item"><a href="index.html">Home</a></li>
   <li class="list-inline-item"><b><a href="about.html">About</a></b></li>
@@ -31,7 +33,7 @@
 
 <div class="about text-justify">
   <h5>About me</h5>
-  <p>Hi there! My name is Govind, and I am a third-year/junior CS major at Grinnell College in Iowa. I am a Web Developer/Programmer at the Data Analysis and Social Inquiry Lab, Grinnell College (DASIL). Currently, I am working on an <u><a href="/personalwebsite/projects/careerchord/index.html">interactive chord diagram</a></u> in
+  <p>Hi there! My name is Govind, and I am a third-year/junior CS major at Grinnell College in Iowa. I am a Software Developer at the Data Analysis and Social Inquiry Lab, Grinnell College (DASIL). Currently, I am working on an <u><a href="/projects/careerchord/index.html">interactive chord diagram</a></u> in
     D3.js that visualizes career paths of 8,711 Grinnell College alumni.</p>
 
   <p>In my own time, I build fun projects, like an <u><a href="https://iq1svj3v0m.execute-api.us-east-1.amazonaws.com/default/test3">AWS
@@ -77,6 +79,8 @@
 
 </div>
 
+
+<script src="darkmode.js"></script>
 
 </body>
 </html>
